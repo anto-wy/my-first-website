@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My First Website</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #10251e;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card {
+      max-width: 450px;
+      padding: 40px 25px;
+      border-radius: 20px;
+      background: #1c382d;
+      box-shadow: 0 10px 40px #0005;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #b8e6c5;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 25px;
+      color: #d8e8dd;
+    }
+
+    button {
+      background: #b8e6c5;
+      color: #10251e;
+      border: none;
+      padding: 14px 25px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: white;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #a4bcae;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Hello World! 👋</h1>
+
+    <p>
+      Welcome to my first website.
+      I am learning HTML, CSS, and GitHub
+      using my Android phone.
+    </p>
+
+    <button onclick="showMessage()">
+      Click Me
+    </button>
+
+    <div class="footer">
+      Created by Me | 2026
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("Congratulations! Your first website is working!");
+    }
+  </script>
+
+</body>
+</html>
